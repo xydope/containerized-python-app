@@ -2,5 +2,10 @@ services:
   app:
     build: .
     container_name: containerized-python-app
+
     ports:
       - "3000:3000"
+
+    environment:
+      APP_ENV: development
+      APP_PORT: 3000
