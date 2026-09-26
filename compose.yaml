@@ -1,6 +1,7 @@
 services:
   app:
     build: .
+    image: containerized-python-app
     container_name: containerized-python-app
 
     ports:
