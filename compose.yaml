@@ -4,6 +4,8 @@ services:
     image: containerized-python-app
     container_name: containerized-python-app
 
+    restart: unless-stopped
+
     ports:
       - "${HOST_PORT}:${APP_PORT}"
 
